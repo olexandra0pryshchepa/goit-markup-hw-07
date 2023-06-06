@@ -1525,6 +1525,16 @@ color: #FFFFFF;
     margin-bottom: 16px;
     width: 100%;
 } 
+
+.modal-form-subscribe{
+   width: 100%;
+}
+.form-footer{
+  width: 100%;
+}
+.modal-form-footer{
+  width: 100%;
+}
 .modal-form-btn-footer{
   display: flex;
   flex-direction: row;
