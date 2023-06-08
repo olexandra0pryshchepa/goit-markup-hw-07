@@ -1214,7 +1214,7 @@ color: #434455;
 .hero { 
   background-size: cover;
   background-color: #2e2f42;
-  max-width: 1440px; 
+  max-width: 428px; 
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
@@ -1398,7 +1398,13 @@ color: #434455;
 } 
 /* -------------CUSTOMERS------- */
 
-
+@media screen and(min-width: 768px){
+  .customers-list-item{
+    height: 88px;
+    width: 168px;
+  }
+  
+}
 @media screen  and (max-width: 767px){
   .customers-list{
   display: flex;
@@ -1410,7 +1416,13 @@ color: #434455;
   }
   .customers-list-item{
   height: 88px;
-  width: calc((100% - 16px) / 2) ;
+  width: 190px;
+}
+}
+@media screen and (min-width: 768px){
+  .customers-list-item {
+    width: 168px;
+    height: 88px;
 }
 }
 
@@ -1575,13 +1587,18 @@ color: #FFFFFF;
 .button-footer-icon{
   margin-left: 16px;
 } 
-.footer-page-logo{
+@media  screen and (max-width: 1157px) {
+  .footer-page-logo{
+    margin-bottom: 72px;
+  }
+  .social-list-footer-div{
   margin-bottom: 72px;
+}
+}
+.footer-page-logo{
   justify-content: center;
 }
-.social-list-footer-div{
-  margin-bottom: 72px;
-}
+
 
 .footer-div {
   display: flex;
@@ -1841,6 +1858,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url(../images/people-office-tablet.jpg);
+    max-width: 768px;
   }
 }
 
@@ -1871,12 +1889,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 /* ---------------tablet ----------------*/
-@media screen and (max-width: 1157px) {
-  .customers-list-item{
-    height: 88px;
-  width: calc((100% - 48px) / 3);
-}
-}
+
+
 @media screen and (min-width: 768px) {
   .mobile-menu-open-btn {
     display: none;
@@ -2068,6 +2082,7 @@ color: #434455;
 .hero{
    padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
 }
 .modal-open-btn{
   margin-top: 48px;
@@ -2126,7 +2141,7 @@ color: #434455;
   flex-direction: row;
 }
 .footer-page-logo{
-   margin-right: 76px;
+   margin-right: 120px;
 }
 .modal-form-footer{
   margin-left: auto;
